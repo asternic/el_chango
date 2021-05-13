@@ -20,7 +20,10 @@ compatible).
 cat extensions_custom.conf >>/etc/asterisk/extensions_custom.conf
 ```
 
-### Como crear un destino en IssabelPBX?
+## Integrar con IssabelPBX?
+
+
+### Destino Personalizado
 
 En Configuración de PBX cree un *Destino Personalizado* con el siguiente contenido:
 
@@ -29,3 +32,13 @@ _chango,talk,1_
 En descripción ponga _Chango_, y guarde los cambios.
 
 Con eso tendrá dentro de Destinos Personalizados una entrada para poder derivar llamadas desde un IVR o desde cualquier otra aplicación de IssabelPBX.
+
+### Extensión Virtual
+
+Luego puede crear una extensión virtual para poder transferir llamadas o marcar directamente la extensión para conversar con el Chango
+
+En Extensiones elija *Añadir Extensión* y de la lista desplegable elija "Ninguno (extensión virtual)"
+
+Complete un número de extensión, en el nombre ponga El Chango y finalmente al final del formulario en *Destinos Opcionales* complete a todos ellos como "Destinos Personalizados", *Chango*
+
+Guarde y aplique cambios. Ya podrá marcar esa nueva extensión para conversar con él.
