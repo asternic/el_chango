@@ -20,7 +20,7 @@ compatible).
 cat extensions_custom.conf >>/etc/asterisk/extensions_custom.conf
 ```
 
-## Integrar con IssabelPBX?
+## Integración con IssabelPBX
 
 
 ### Destino Personalizado
